@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* logo开始 */
+.logo{
+    width: 1440px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 35px 0;
+    margin-top: 10px;
+}
+.logo img{
+    display: block;
+    height: 50px;
+    width: 201px;
+    margin: 0 auto;
+}
+
+/* logo结束  */
+/* nav区开始 */
+.nav{
+    width: 100%;
+    height: 30px;
+}
+.navbox{
+    width: 1440px;
+    height: 30px;
+    margin: 0 auto;
+}
+.navbox ul{
+    width: 560px;
+    height: 30px;
+    margin: 0 auto;
+}
+.navbox ul li{
+    float: left;
+    margin: 0 27px;
+}
+.navbox ul li a{
+    font-size: 16px;
+    font-family: "华文仿宋";
+    color: #000;
+    line-height: 25px;
+}
+.navbox .underline{
+    display: none;
+    /* display: block; */
+    height: 1px;
+    background: #000000;
+}
+/* nav区结束 */
+/* banner开始 */
+.banner{
+    height: 559px;
+    width: 1297px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.banner img{
+    height: 559px;
+    width: 1297px;
+}
+/* banner结束 */
+/* main区开始 */
+.main{
+    width: 1320px;
+    height: 420px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin: 0 auto;
+}
+.main-title{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.main-title .span1{
+    font-family:宋体;
+    font-size:30px;
+    font-weight:bold;
+    font-style:normal;
+    color:#333333;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+}
+.main-title .span2{
+    text-align: center; 
+    letter-spacing: 2px; 
+    line-height: 28px;
+    font-size: 16px;
+    color: #999;
+    display: block;
+    width: 770px;
+    margin: 0 auto;
+}
+.mian-img{
+    height: 152px;
+    width: 770px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+.mian-img img{
+    display: block;
+    height: 152px;
+    width: 366px;
+    margin: 0 auto;
+}
+
+
+/* main区结束 */
+/* container开始 */
+.container{
+    height: 343.5px;
+    width: 1320px;
+    margin: 0 auto;
+    padding: 36px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: nowrap;
+}
+.container .container-item{
+    height: 100%;
+    width: 25%;
+    /* background-color: bisque; */
+}
+.container-item .item-img{
+    height: 200px;
+    width: 100%;
+    /* background-color: palegreen; */
+}
+.container-item .item-img img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.container-item .item-content{
+    height: 60px;
+    width: 100%;
+}
+.container-item .item-content .span1{
+    font-family:tahoma;
+    font-size:18px;
+    font-weight:normal;
+    font-style:normal;
+    color:#333333;
+    display:block;
+    padding:10px 0 10px 0;
+    text-align: center;
+}
+.container-item .item-content .span2{
+    font-size:13px;
+    font-weight:normal;
+    font-style:normal;
+    color:#bababa;
+    display:block;
+    text-align: center;
+}
+/* container结束 */
+/* contact开始 */
+.contact{
+    width: 740px;
+    height: 316px;
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.contact-title{
+    font-family:宋体;
+    font-size:30px;
+    font-weight:bold;
+    font-style:normal;
+    color:#000000;
+    padding:0 0 15px 0;
+    display:block;
+    text-align: center;
+}
+.contact-text{
+    margin-top: 15px;
+}
+.contact-text span{
+    display: block;
+    text-align: center; 
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+}
+.contact-input{
+    position: relative;
+    width: 652px;
+    margin: 0 auto;
+    margin-top: 66px;
+}
+.input-left{
+    position: absolute;
+    left: 0;
+}
+.input-left input{
+    height: 57px;
+    width: 510px;
+    border: 1px solid rgb(222, 222, 222);
+    padding-left: 5px;
+}
+input:focus{
+    outline: none;
+}
+.input-left .span1{
+    font-size: 15px;
+    color: #666;
+    position: absolute;
+    left: 30px;
+    line-height: 57px;
+}
+.input-left .span2{
+    font-size: 15px;
+    color: red;
+    position: absolute;
+    left: 94px;
+    line-height: 57px;
+}
+.input-right{
+    position: absolute;
+    right: 0;
+}
+.input-right input{
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    display: block;
+    width: 140px;
+    height: 59px;
+    letter-spacing: 5px;
+    border: none;
+}
+/* contact结束 */
+/* bottom开始 */
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: nowrap;
+}
+.bottom-item{
+    width: 12.5%;
+    height: 30%;
+}
+.bottom-item img{
+    height: 100%;
+    width: 100%;
+}
+
+/* bottom结束 */
+/* fotter开始 */
+.footer{
+    width: 100%;
+    height: 26px;
+    padding: 30px 0;
+}
+.footer-container{
+    width: 1320px;
+    margin: 0 auto;
+    /* background-color: bisque; */
+    height: 26px;
+    position: relative;
+}
+.footer-container .span1{
+    display: inline-block;
+    color: #999;
+    font-size: 13px;
+    line-height: 26px;
+    position: absolute;
+    left: 0;
+}
+.footer-container .span2{
+    display: inline-block;
+    height: 21px;
+    width: 179px;
+    padding: 2.5px 0;
+    margin-left: 50px;
+    position: absolute;
+    left: 570px;
+}
+.footer-container .span2 img{
+    height: 21px;
+    width: 179px;
+}
+.footer-container .span3{
+    font-size: 13px;
+    color: #999;
+    position: absolute;
+    right: 0;
+    line-height: 26px;
+}
+/* fotter结束 */
+
+.top{
+    background-color: #606060;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+.top span{
+    font-size: 20px;
+    width: 30px;
+    margin: 0 auto;
+    display: block;
+    transform: rotate(270deg);
+    color: #fff;
+    font-weight: bold;
+}

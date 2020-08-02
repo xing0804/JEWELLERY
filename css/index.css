@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* logo开始 */
+.logo{
+    width: 1440px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+.logo img{
+    display: block;
+    height: 50px;
+    width: 201px;
+    margin: 0 auto;
+}
+
+/* logo结束  */
+/* nav区开始 */
+.nav{
+    width: 100%;
+    height: 30px;
+}
+.navbox{
+    width: 1440px;
+    height: 30px;
+    margin: 0 auto;
+}
+.navbox ul{
+    width: 560px;
+    height: 30px;
+    margin: 0 auto;
+}
+.navbox ul li{
+    float: left;
+    margin: 0 27px;
+}
+.navbox ul li a{
+    font-size: 16px;
+    font-family: "华文仿宋";
+    color: #000;
+    line-height: 25px;
+}
+.navbox .underline{
+    display: none;
+    height: 1px;
+    background: #000000;
+}
+
+
+/* nav区结束 */
+/* banner区开始 */
+.banner{
+    width: 100%;
+    height: 650px;
+}
+.banner-container{
+    width: 1320px;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 0 40px;
+    /* background-color: antiquewhite; */
+}
+.banner-container .img1{
+    width: 650px;
+    height: 650px;
+    /* background-color: aqua; */
+    float: left;
+    position: relative;
+}
+.banner-container .small-img{
+    width: 650px;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap:wrap;
+    padding-left: 10px;
+}
+.banner-container .small-img .img2{
+    width: 320px;
+    height: 320px;
+    /* background-color: aquamarine; */
+    position: relative;
+}
+.banner-container .img1 img{
+    width: 650px;
+    height: 650px;
+}
+.banner-container .img1 .banner-title{
+    font-size: 18px;
+    display: block;
+    text-align: right;
+    color: #666;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.banner-container .img1 .banner-translate{
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    color: #666;
+    position: absolute;
+    top: 45px;
+    right: 31px;
+}
+.banner-container .small-img .img2 img{
+    height: 320px;
+    width: 320px;
+}
+.banner-container .small-img .img2 .banner-title{
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    color: #666;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.banner-container .small-img .img2 .banner-translate{
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    color: #666;
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+/* banner区结束 */
+/* main开始 */
+.mian-box1{
+    height: 114px;
+    width: 100%;
+    padding: 70px 0;
+}
+.main-title{
+    width: 1320px;
+    height: 100%;
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+    position: relative;
+}
+.title-box{
+    position: absolute;
+    left: 0;
+    width: 320px;
+}
+
+.title-icon{
+    font-size: 100px;
+    font-family: "宋体";
+    color: #F7F2F0;
+    line-height: 114px;
+    width: 320px;
+    font-style: normal;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+.title-content{
+    font-size: 30px;
+    font-family: "宋体";
+    color: #333;
+    line-height: 114px;
+    position: absolute;
+    right: 0;
+    font-weight:bold;
+    font-style:normal
+}
+.title-container{
+    width: 919px;
+    position: absolute;
+    right: 0;
+}
+.title-container-one{
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+}
+.main-container{
+    width: 1350px;
+    height: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.main-container .container-item{
+    height: 490px;
+    width: 305px;
+
+}
+.main-container .container-item .item-img{
+    width: 305px;
+    height: 400px;
+    overflow: hidden;
+}
+.main-container .container-item .item-img img{
+    width: 305px;
+    height: 400px;
+}
+.main-container .container-item span{
+    color:#333333;
+    font-size:14px;
+    font-family:"微软雅黑";
+    font-weight:normal;
+    padding-top:15px;
+    padding-bottom:8px;
+    display: block;
+    text-align: center;
+}
+/* main结束 */
+/* contact开始 */
+.contact{
+    width: 740px;
+    height: 316px;
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.contact-title{
+    font-family:宋体;
+    font-size:30px;
+    font-weight:bold;
+    font-style:normal;
+    color:#000000;
+    padding:0 0 15px 0;
+    display:block;
+    text-align: center;
+}
+.contact-text{
+    margin-top: 15px;
+}
+.contact-text span{
+    display: block;
+    text-align: center; 
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+}
+.contact-input{
+    position: relative;
+    width: 652px;
+    margin: 0 auto;
+    margin-top: 66px;
+}
+.input-left{
+    position: absolute;
+    left: 0;
+}
+.input-left input{
+    height: 57px;
+    width: 510px;
+    border: 1px solid rgb(222, 222, 222);
+    padding-left: 5px;
+}
+input:focus{
+    outline: none;
+}
+.input-left .span1{
+    font-size: 15px;
+    color: #666;
+    position: absolute;
+    left: 30px;
+    line-height: 57px;
+}
+.input-left .span2{
+    font-size: 15px;
+    color: red;
+    position: absolute;
+    left: 94px;
+    line-height: 57px;
+}
+.input-right{
+    position: absolute;
+    right: 0;
+}
+.input-right input{
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    display: block;
+    width: 140px;
+    height: 59px;
+    letter-spacing: 5px;
+    border: none;
+}
+/* contact结束 */
+/* bottom开始 */
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: nowrap;
+}
+.bottom-item{
+    width: 12.5%;
+    height: 30%;
+}
+.bottom-item img{
+    height: 100%;
+    width: 100%;
+}
+
+/* bottom结束 */
+/* fotter开始 */
+.footer{
+    width: 100%;
+    height: 26px;
+    padding: 30px 0;
+}
+.footer-container{
+    width: 1320px;
+    margin: 0 auto;
+    /* background-color: bisque; */
+    height: 26px;
+    position: relative;
+}
+.footer-container .span1{
+    display: inline-block;
+    color: #999;
+    font-size: 13px;
+    line-height: 26px;
+    position: absolute;
+    left: 0;
+}
+.footer-container .span2{
+    display: inline-block;
+    height: 21px;
+    width: 179px;
+    padding: 2.5px 0;
+    margin-left: 50px;
+    position: absolute;
+    left: 570px;
+}
+.footer-container .span2 img{
+    height: 21px;
+    width: 179px;
+}
+.footer-container .span3{
+    font-size: 13px;
+    color: #999;
+    position: absolute;
+    right: 0;
+    line-height: 26px;
+}
+/* fotter结束 */
+.img{
+    overflow: hidden;
+    cursor: pointer;
+}
+@keyframes imgover
+{
+from {transform: scale(1);}
+to {transform: scale(1.1);}
+}
+
+.top{
+    background-color: #606060;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+.top span{
+    font-size: 20px;
+    width: 30px;
+    margin: 0 auto;
+    display: block;
+    transform: rotate(270deg);
+    color: #fff;
+    font-weight: bold;
+}
+
+
