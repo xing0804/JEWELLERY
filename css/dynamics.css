@@ -85,13 +85,15 @@ a{
     padding-right: 60px;
     /* background-color: pink; */
 }
-.item-img{
+.con-item .item-img{
     width: 260px;
     height: 140px;
-    overflow: hidden;
-    padding: 15px 40px 15px 0;
+    /* padding: 15px 40px 15px 0; */
+    
     /* background-color: plum; */
-    float: left;
+    /* float: left; */
+    display: inline-block;
+    overflow: hidden !important;
     
 }
 .item-img img{
@@ -99,9 +101,11 @@ a{
     height: 140px;
 }
 .item-content{
-    float: left;
+    /* float: left; */
     width: 662px;
     cursor: pointer;
+    margin-left: 300px;
+    margin-top: -154px;
 }
 .item-title{
     font-size: 16px;
@@ -249,8 +253,8 @@ a{
 }
 /* fotter结束 */
 .img{
-    width: 260px;
-    height: 140px;
+    /* width: 260px;
+    height: 140px; */
     cursor: pointer;
 }
 @keyframes imgover
