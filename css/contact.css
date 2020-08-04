@@ -55,7 +55,7 @@ a{
 
 /* nav区结束 */
 /* map区开始 */
-.map{
+#map{
     width: 1310px;
     height: 550px;
     background-color: royalblue;

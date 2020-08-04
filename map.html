@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #container {
+            width: 1400px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: aqua;
+        }
+    </style>
+    <title>地图加载完成</title>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script src="https://webapi.amap.com/maps?v=1.4.13&key=09e3c0a00b6c5b81ed5802e3c7ae377b"></script>
+    <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+    <script>
+        var map = map = new AMap.Map('container', {
+            resizeEnable: true,
+            viewMode: '3D',
+            zoom: 15, //设置地图显示的缩放级别
+            center: [112.45358231249665,38.02132026276655] //设置地图中心点坐标
+        });
+        // 创建一个 Marker 实例：（标记点）
+        var marker = new AMap.Marker({
+           position: new AMap.LngLat(112.45358231249665,38.02132026276655), // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+           offset: new AMap.Pixel(-16,-45),
+           title: "中北大学"
+        });
+
+         // 将创建的点标记添加到已有的地图实例：
+       map.add(marker);
+	
+  	   //内容
+	   marker.content =  '<div class="info-title">这里是中北大学<br>欢迎广大学子来到中北大学</div>'
+         marker.on('mouseover', markerOver);
+         //图标移入事件 
+	    function markerOver(e) {
+	    	infoWindow = new AMap.InfoWindow({offset: new AMap.Pixel(0, -30)});
+	        infoWindow.setContent(e.target.content);
+	        infoWindow.open(map, e.target.getPosition());
+        }
+
+        // map.on("complete", function () {
+        //     log.success("地图加载完成！");
+        // });
+    </script>
+</body>
+
+</html>
