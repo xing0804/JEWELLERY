@@ -52,6 +52,25 @@ window.onload = function () {
                 scrollTop: 0
             }, 2000);
         }
-    }
+    };
+
+    //点击跳转系列
+    var series=document.querySelectorAll(".img");
+    // console.log(series);
+    series[0].onclick=function(){
+        window.location.href="../geometry.html";
+    };
+    series[1].onclick=function(){
+        window.location.href="../ring.html";
+    };
+    series[2].onclick=function(){
+        window.location.href="../earing.html";
+    };
+    series[3].onclick=function(){
+        window.location.href="../lifetime.html";
+    };
+    series[4].onclick=function(){
+        window.location.href="../letter.html";
+    };
 
 }

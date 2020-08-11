@@ -37,7 +37,8 @@ window.onload = function () {
                 scrollTop: 0
             }, 2000);
         }
-    }
+    };
+    
 
     //地图显示
     var map = map = new AMap.Map('map', {
@@ -65,5 +66,6 @@ window.onload = function () {
         infoWindow.setContent(e.target.content);
         infoWindow.open(map, e.target.getPosition());
     }
+    
 
 }

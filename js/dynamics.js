@@ -3,15 +3,10 @@ window.onload = function () {
     //获取导航
     var navs = document.querySelectorAll(".navbox ul li");
     var line = document.querySelectorAll(".underline")
-    // console.log(line);
 
     for (let i = 0; i < navs.length; i++) {
         navs[i].onmouseover = function () {
-            // console.log(line[i]);
-            // animate(line[i], {
-            //     display: "block",
-            //     width:20
-            // }, 300);
+            
             line[i].style.display = "block";
         }
         navs[i].onmouseout = function () {
@@ -60,16 +55,6 @@ window.onload = function () {
         }
     }
 
-    //查看更多
-    var morebtn=document.querySelector(".more");
-    var conList=document.querySelector(".con-list");
-    var main=document.querySelector(".main");
-    console.log(main);
-    morebtn.onclick=function(){
-        morebtn.style.display="none";
-        main.style.height="1350px"
-        conList.style.height="1350px";
-    }
 
     //返回顶部按钮显示
     var topbtn=document.querySelector(".top");
@@ -89,5 +74,29 @@ window.onload = function () {
                 scrollTop: 0
             }, 2000);
         }
+    };
+
+    //查看更多
+    var morebtn=document.querySelector(".more");
+    var conList=document.querySelector(".con-list");
+    var main=document.querySelector(".main");
+    console.log(main);
+    morebtn.onclick=function(){
+        morebtn.style.display="none";
+        main.style.height="1350px"
+        conList.style.height="1350px";
     }
+
+    //标签点击切换内容
+    var as=document.querySelectorAll(".search-label a");
+    var cons=document.querySelectorAll(".containter");
+    for(let j=0;j<as.length;j++){
+        as[j].onclick=function(){
+            for(var i=0;i<cons.length;i++){
+                cons[i].style.display="none";
+            }
+            cons[j].style.display="block";
+        }
+    }
+    
 }
