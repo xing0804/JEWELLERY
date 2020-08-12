@@ -82,6 +82,7 @@ window.onload = function () {
                 scrollTop: 0
             }, 2000);
         }
-    }
+    };
+
 
 }

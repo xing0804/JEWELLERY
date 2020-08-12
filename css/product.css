@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+/* //清理浮动 */
+.clearfloat::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* logo开始 */
+.logo{
+    width: 1440px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+.logo img{
+    display: block;
+    height: 50px;
+    width: 201px;
+    margin: 0 auto;
+}
+
+/* logo结束  */
+/* nav区开始 */
+.nav{
+    width: 100%;
+    height: 30px;
+}
+.navbox{
+    width: 1440px;
+    height: 30px;
+    margin: 0 auto;
+}
+.navbox ul{
+    width: 560px;
+    height: 30px;
+    margin: 0 auto;
+}
+.navbox ul li{
+    float: left;
+    margin: 0 27px;
+}
+.navbox ul li a{
+    font-size: 16px;
+    font-family: "华文仿宋";
+    color: #000;
+    line-height: 25px;
+}
+.navbox .underline{
+    display: none;
+    height: 1px;
+    background: #000000;
+}
+
+
+/* nav区结束 */
+/* main */
+.main{
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+.back{
+    width: 100%;
+    text-align: right;
+}
+.back a{
+    font-size: 15px;
+    color: #a3a3a3;
+}
+.swiper{
+    width: 620px;
+    height: 800px;
+    /* background-color: royalblue; */
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+.swiper .swiper-img{
+    width: 3100px;
+    height: 776px;
+    /* background-color: silver; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.swiper-img .imgbox{
+    width: 600px;
+    height: 776px;
+    padding: 0 10px;
+    float: left;
+}
+.swiper-img .imgbox img{
+    width: 600px;
+    height: 776px;
+}
+.swiper-btns{
+    width: 140px;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -70px;
+    /* background-color: bisque; */
+}
+.swiper-btn{
+    width: 25px;
+    height: 1px;
+    display: block;
+    background-color: #a3a3a3;
+    float: left;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+.swiper-btn:nth-child(1){
+    height: 3px;
+    background-color: #000;
+}
+.detail{
+    width: 660px;
+    position: absolute;
+    right: 0;
+}
+.data-title{
+    font-size: 24px;
+    font-family: "宋体";
+    font-weight: bold;
+    color: #333333;
+}
+.data-price{
+    font-size: 20px;
+    font-family: "宋体";
+    color: #a3a3a3;
+    margin-top: 20px;
+}
+.data-text{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #a3a3a3;
+    margin-top: 20px;
+    line-height: 26px;
+    letter-spacing: .5px;
+}
+.data-no{
+    margin-top: 20px;
+}
+.data-attr strong{
+    font-size: 14px;
+    color: #333;
+    font-family: "微软雅黑";
+    line-height: 24px;
+    font-weight: 600;
+}
+.data-attr span{
+    font-size: 14px;
+    color: #a3a3a3;
+    font-family: "微软雅黑";
+    line-height: 24px;
+}
+.data-consult{
+    margin-top: 20px;
+}
+.data-consult-btn{
+    width: 200px;
+    height: 46px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 15px;
+    line-height: 46px;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.news1{
+    margin-top: 20px;
+}
+.news-title{
+    height: 46px;
+    width: 100%;
+    border: 1px solid #a3a3a3;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.show-btn{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 46px;
+    color: #666;
+}
+.small-title{
+    font-size: 16px;
+    color: #666;
+    line-height: 46px;
+}
+.news-content{
+    font-size: 13px;
+    font-family: "微软雅黑";
+    color: #a3a3a3;
+    margin-top: 20px;
+    line-height: 26px;
+    /* letter-spacing: .5px; */
+    padding-left: 42px;
+    overflow: hidden;
+}
+.news-content span{
+    font-size: 13px;
+    color: #a3a3a3;
+    line-height: 26px;
+    display: block;
+}
+.news-content .strong{
+    color: #000;
+}
+.data-pack-content-two{
+    margin-top: 20px;
+}
+/* main */
+/* other */
+.other{
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 870px;
+    margin-bottom: 100px;
+}
+.other-title{
+    font-size: 30px;
+    color: #333;
+    font-family: "宋体";
+    font-weight: bold;
+}
+.other-container{
+    width: 100%;
+    height: 462px;
+    margin-top: 30px;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: start;
+    align-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.con-item{
+    width: 25%;
+    height: 462px;
+    /* background-color: palevioletred; */
+    /* padding: 0 5px; */
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+.con-item .item-img{
+    height: 400px;
+    width: 300px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.con-item .item-img img{
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    
+}
+.con-item .item-content{
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5e5e5e;
+    padding: 10px 0;
+}
+/* other */
+/* bottom开始 */
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: nowrap;
+}
+.bottom-item{
+    width: 12.5%;
+    height: 30%;
+}
+.bottom-item img{
+    height: 100%;
+    width: 100%;
+}
+
+/* bottom结束 */
+/* fotter开始 */
+.footer{
+    width: 100%;
+    height: 26px;
+    padding: 30px 0;
+}
+.footer-container{
+    width: 1320px;
+    margin: 0 auto;
+    /* background-color: bisque; */
+    height: 26px;
+    position: relative;
+}
+.footer-container .span1{
+    display: inline-block;
+    color: #999;
+    font-size: 13px;
+    line-height: 26px;
+    position: absolute;
+    left: 0;
+}
+.footer-container .span2{
+    display: inline-block;
+    height: 21px;
+    width: 179px;
+    padding: 2.5px 0;
+    margin-left: 50px;
+    position: absolute;
+    left: 570px;
+}
+.footer-container .span2 img{
+    height: 21px;
+    width: 179px;
+}
+.footer-container .span3{
+    font-size: 13px;
+    color: #999;
+    position: absolute;
+    right: 0;
+    line-height: 26px;
+}
+/* fotter结束 */
+
+.top{
+    background-color: #606060;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+.top span{
+    font-size: 20px;
+    width: 30px;
+    margin: 0 auto;
+    display: block;
+    transform: rotate(270deg);
+    color: #fff;
+    font-weight: bold;
+}
